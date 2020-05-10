@@ -39,34 +39,38 @@ body[class*="dark-ui"] {
 
     h1,
     h2 {
-      border-bottom-color: rgba(255, 255, 255, 0.4);
+      border-bottom-color: @blue-dark-1;
     }
 
     hr {
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: @yellow-light-1;
+      height: 2px;
     }
 
     blockquote {
-      color: rgba(255, 255, 255, 0.4);
-      border-left: 4px solid rgba(255, 255, 255, 0.1);
+      color: @blue-gray-3;
+      background-color: @darkest;
+      border-left: 4px solid @blue-dark-3;
+      font-style: italic;
+      padding: 2px 15px;
     }
 
     table th {
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: @blue-dark-3;
     }
 
     table th,
     table td {
-      border: 1px solid rgba(255, 255, 255, 0.25);
+      border: 1px solid @blue-gray-2;
     }
 
     table tr {
       background-color: transparent;
-      border-top: 1px solid rgba(255, 255, 255, 0.25);
+      border-top: 1px solid @blue-gray-2;
     }
 
     table tr:nth-child(2n) {
-      background-color: rgba(255, 255, 255, 0.05);
+      background-color: @blue-dark-1;
     }
 
     img {
@@ -78,21 +82,30 @@ body[class*="dark-ui"] {
       background-color: @darkest;
     }
 
-    .cm-header {color: #ffcc66;}
-    .cm-quote {color: #969896; font-style: italic;}
+    code {
+      background-color: @darkest;
+    }
+
+    q {
+      color: @blue-gray-3;
+      font-style: italic;
+    }
+
+    .cm-header {color: @blue-light-1;}
+    .cm-quote {color: @blue-gray-3; font-style: italic;}
     .cm-negative {color: @red;}
-    .cm-positive {color: #292;}
+    .cm-positive {color: @green;}
     .cm-header, .cm-strong {font-weight: bold;}
     .cm-em {font-style: italic;}
     .cm-link {text-decoration: underline;}
     .cm-strikethrough {text-decoration: line-through;}
 
-    .cm-keyword {color: #cc99cc; font-weight: normal;}
+    .cm-keyword {color: @purple-light-1; font-weight: normal;}
     .cm-atom {color: @yellow-light-1;}
     .cm-number {color: @orange;}
     .cm-def {color: @blue-light-2;}
     .cm-property {color: @green;}
-    .cm-operator {color: #cc99cc;}
+    .cm-operator {color: @violet;}
     .cm-variable,
     .cm-punctuation {
       color: @green;
