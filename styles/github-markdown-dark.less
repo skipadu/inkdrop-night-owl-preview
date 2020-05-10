@@ -1,6 +1,10 @@
+@import './colors';
+
 body[class*="dark-ui"] {
   .mde-preview {
-    color: rgba(255, 255, 255, 0.7);
+    color: @foreground;
+    background-color: @background;
+    border-left: 1px solid @darkest;
   }
 
   .mde-preview {
@@ -17,11 +21,11 @@ body[class*="dark-ui"] {
     }
 
     a {
-      color: #6987AF;
+      color: @crimson;
     }
 
     strong, em {
-      color: white;
+      color: @foreground;
     }
 
     h1,
@@ -30,11 +34,7 @@ body[class*="dark-ui"] {
     h4,
     h5,
     h6 {
-      color: rgba(255, 255, 255, 0.875);
-    }
-
-    h6 {
-      color: rgba(255, 255, 255, 0.625);
+      color: @blue-light-1;
     }
 
     h1,
@@ -75,12 +75,12 @@ body[class*="dark-ui"] {
 
     .highlight pre,
     pre {
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: @darkest;
     }
 
     .cm-header {color: #ffcc66;}
     .cm-quote {color: #969896; font-style: italic;}
-    .cm-negative {color: #d44;}
+    .cm-negative {color: @red;}
     .cm-positive {color: #292;}
     .cm-header, .cm-strong {font-weight: bold;}
     .cm-em {font-style: italic;}
@@ -88,27 +88,30 @@ body[class*="dark-ui"] {
     .cm-strikethrough {text-decoration: line-through;}
 
     .cm-keyword {color: #cc99cc; font-weight: normal;}
-    .cm-atom {color: #8abeb7;}
-    .cm-number {color: #f99157;}
-    .cm-def {color: #b5bd68;}
-    .cm-property {color: #b5bd68;}
+    .cm-atom {color: @yellow-light-1;}
+    .cm-number {color: @orange;}
+    .cm-def {color: @blue-light-2;}
+    .cm-property {color: @green;}
     .cm-operator {color: #cc99cc;}
     .cm-variable,
-    .cm-punctuation {}
-    .cm-variable-2 {color: #4A664A;}
-    .cm-variable-3, .cm-type {color: rgba(255, 255, 255, 0.8);}
-    .cm-comment {color: #969896; font-style: italic;}
-    .cm-string {color: #8abeb7;}
-    .cm-string-2 {color: #8abeb7;}
-    .cm-meta {color: #f99157;}
-    .cm-qualifier {color: #555;}
-    .cm-builtin {color: #8abeb7;}
-    .cm-bracket {color: #f99157;}
-    .cm-tag {color: #a54543;}
-    .cm-attribute {color: #fda331;}
-    .cm-hr {color: #999;}
-    .cm-link {color: #f99157;}
-
-    .cm-error {color: #f00;}
+    .cm-punctuation {
+      color: @green;
+    }
+    .cm-variable-2 {color: @foreground;}
+    .cm-variable-3, .cm-type {color: @foreground;}
+    .cm-comment {color: @turqoise-dark; font-style: italic;}
+    .cm-string {color: @yellow-light-1;}
+    .cm-string-2 {color: @yellow-light-1;}
+    .cm-meta {color: @orange;}
+    .cm-qualifier {color: @gray-dark-2;}
+    .cm-builtin {color: @yellow-light-1;}
+    .cm-bracket {color: @orange;}
+    .cm-tag {color: @green;}
+    .cm-attribute {color: @green;}
+    .cm-hr {color: @gray-dark-3;}
+    .cm-link {color: @orange;}
+    .cm-error {color: @red;}
+    .cm-tag.bracket {color: @turqoise;}
+    .inline .cm-variable-2 {color: @green;}
   }
 }
