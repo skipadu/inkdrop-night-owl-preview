@@ -1,14 +1,12 @@
 # Night Owl preview theme
 
-A default Markdown preview theme for [Inkdrop](https://www.inkdrop.info/).
+- Night Owl preview theme for [Inkdrop](https://www.inkdrop.info/).
+- Based on VSCode theme, [Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl) by Sarah Drasner
 
-[Ported Night Owl by Sarah Drasner](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl&WT.mc_id=twitter-social-sdras)
+## Notes
 
- * `styles/github-markdown.less` - Styles for light UI theme
- * `styles/github-markdown-dark.less` - Styles for dark UI theme
+Could not do exact match versus the VSCode when comparing same file. CodeMirror does not chop all text to enough small pieces that those could be added their own style.
 
-## Theming code blocks
+## Licensing
 
-Highlighting code blocks is built with [CodeMirror](https://codemirror.net/demo/theme.html), and CSS selectors for styling code blocks are compatible with it.
-CSS selectors always start with `cm-`.
-You can easily import styles from [CodeMirror's theme](https://github.com/codemirror/CodeMirror/tree/master/theme).
+MIT [LICENSE](https://raw.githubusercontent.com/skipadu/inkdrop-night-owl-preview/master/LICENSE)
